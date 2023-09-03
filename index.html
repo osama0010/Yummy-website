@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div
+            class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+            <span class="loader"></span>
+        </div>
+
+
+        <div class="side-nav">
+            <div class="nav-menu bg-black d-flex flex-column justify-content-between justify-content-center text-center p-4">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="showSearchStructure(); closeNavMenu()" class="py-4 position-relative cp text-center">Search</li>
+                    <li onclick="getCategories(); closeNavMenu()" class="py-4 position-relative cp text-center">Categories</li>
+                    <li onclick="getArea(); closeNavMenu()" class="py-4 position-relative cp text-center">Area</li>
+                    <li onclick="getIngredients(); closeNavMenu()" class="py-4 position-relative cp text-center">Ingredients</li>
+                    <li onclick="Contacts(); closeNavMenu()" class="py-4 position-relative cp text-center">Contact Us</li>
+                </ul>
+                <div class="text-center">
+                    <h6>choose color</h6>
+                <span class="color-box"></span>
+                <span class="color-box"></span>
+                <span class="color-box"></span>
+                <span class="color-box"></span>
+                </div>
+                <div class="footer text-center">
+              
+                    <i class="fa-brands fa-facebook cp"></i>
+                    <i class="fa-brands fa-twitter cp"></i>
+                    <i class="fa-solid fa-globe cp"></i>
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+            <div
+                class="nav-header bg-white text-black d-flex flex-column justify-content-between py-4 px-2 text-center ">
+                <a href=""><img src="images/logo.png" class="icon"></a>
+                <i class="fa fa-bars open-close-icon fa-align-justify fa-2x cp"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="search">
+
+        </div>
+
+        <div class="container">
+            <div class="row py-5 g-4" id="mealsData">
+            </div>
+        </div>
+
+        <!-- <div class="col-md-4">
+            <img class="w-75 rounded-3" src="${meal.strMealThumb}"
+                alt="">
+                <h2>${meal.strMeal}</h2>
+        </div>
+        <div class="col-md-8">
+            <h2>Instructions</h2>
+            <p>${meal.strInstructions}</p>
+            <h3><span class="fw-bolder">Area : </span>${meal.strArea}</h3>
+            <h3><span class="fw-bolder">Category : </span>${meal.strCategory}</h3>
+            <h3>Recipes :</h3>
+            <ul class="list-unstyled d-flex g-3 flex-wrap">
+                ${ingredients}
+            </ul>
+
+            <h3>Tags :</h3>
+            <ul class="list-unstyled d-flex g-3 flex-wrap">
+                ${tagsStr}
+            </ul>
+
+            <a target="_blank" href="${meal.strSource}" class="btn btn-success">Source</a>
+            <a target="_blank" href="${meal.strYoutube}" class="btn btn-danger">Youtube</a>
+        </div>` -->
+
+        <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
